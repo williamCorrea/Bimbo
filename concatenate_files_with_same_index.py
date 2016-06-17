@@ -54,6 +54,15 @@ count=0
 result = pd.concat([fixed_df,month_07,month_08,month_09,month_10],axis=1)
 
 result.to_csv("concatenacion_entera.csv")
+first_ok = result['CODIGO ESTADO TARJETA']==0
+last_not_ok = result['CODIGO ESTADO TARJETA_10']==3000000000
+
+cambio = result[first_ok & last_not_ok]
+
+print cambio[:5]
+
+print len(cambio)
+
 
 #print result.loc[126127,56495]
 
