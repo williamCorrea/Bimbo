@@ -5,7 +5,6 @@ Created on Fri Jun 17 09:50:46 2016
 @author: correabe
 """
 import pandas as pd
-import csv
 
 fixed_df = pd.read_csv("D:/kaggle/bancolombia/ESTADOTDC201506.csv",
                     dtype={'CEDULA1':str,'FRANQUICIA':str,'NUMEROTARJETA1':str,
