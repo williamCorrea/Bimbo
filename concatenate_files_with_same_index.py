@@ -63,6 +63,9 @@ print cambio[:5]
 
 print len(cambio)
 
+print len(cambio)
+
+cambio.to_csv("change.csv",index=True,index_label=['CEDULA','NUMTARJETA'])
 
 #print result.loc[126127,56495]
 
